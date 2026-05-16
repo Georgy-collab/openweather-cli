@@ -6,7 +6,7 @@ from datetime import datetime
 def save_to_file(data: dict) -> None:
     with open("wearther.json", "w", encoding="UTF-8") as file:
         json.dump(data, file, indent=4, ensure_ascii=False)
-    print(f"Данные сохранены в файл wearther.json")
+
 
 
 def file_hour_3_update() -> bool:
