@@ -4,14 +4,14 @@ from datetime import datetime
 
 
 def save_to_file(data: dict) -> None:
-    with open("wearther.json", "w", encoding="UTF-8") as file:
+    with open("weather.json", "w", encoding="UTF-8") as file:
         json.dump(data, file, indent=4, ensure_ascii=False)
 
 
 
 def file_hour_3_update() -> bool:
 
-    file_path = "wearther.json"
+    file_path = "weather.json"
     file_exists = os.path.exists(file_path)
 
     if file_exists:
