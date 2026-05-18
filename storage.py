@@ -27,7 +27,7 @@ def file_hour_3_update() -> bool:
 
 def read_from_file() -> dict | None:
     if file_hour_3_update():
-        with open("wearther.json", "r", encoding="UTF-8") as file:
+        with open("weather.json", "r", encoding="UTF-8") as file:
             return json.load(file)
     else:
         return None
