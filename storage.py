@@ -13,7 +13,6 @@ def file_hour_3_update() -> bool:
 
     file_path = "wearther.json"
     file_exists = os.path.exists(file_path)
-    update_needed = True
 
     if file_exists:
         file_time = os.path.getmtime(file_path)
@@ -23,6 +22,7 @@ def file_hour_3_update() -> bool:
             return True
         else:
             return False
+    return False 
 
 
 def read_from_file() -> dict | None:
